@@ -1,4 +1,4 @@
-# automacao-de-testes-web-resolucoes-de-exercicios
+# Automação de testes web — resoluções de exercícios
 
 Projeto de prática de automação de testes web com [Cypress](https://www.cypress.io/), a biblioteca `cypress-xpath` e [Faker](https://fakerjs.dev/), desenvolvido como parte dos exercícios da pós-graduação em Automação de Testes de Software.
 
