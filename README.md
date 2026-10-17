@@ -4,7 +4,7 @@ Projeto de prática de automação de testes web com [Cypress](https://www.cypre
 
 ## Exercícios
 
-1. **Cenários de teste:** implementar casos de cadastro, autenticação, catálogo, pesquisa, inscrição e compra no Automation Exercise. O spec modularizado cobre os casos 01–05, 08–10, 15 e 16.
+1. **Cenários de teste:** implementar casos de cadastro, autenticação, catálogo, pesquisa, inscrição e compra no Automation Exercise. O spec modularizado cobre os casos de testes do 01 ao 05, 08 ao 10, 15 e 16.
 2. **Correção de testes:** analisar e corrigir testes com problemas de sintaxe, funcionalidade e seletores. O exercício de referência está no [Gist](https://gist.github.com/samlucax/0df852881249b561cdf8888493b03125).
 3. **Seletores XPath:** instalar e experimentar `cypress-xpath`, adaptando seletores e observando legibilidade e velocidade de execução.
 
