@@ -57,7 +57,6 @@ npx cypress run --spec "cypress/e2e/1-getting-started/automation-exercise-module
   
 - `cypress/e2e/1-getting-started/automation-exercise.cy.js`: casos de testes do 01 ao 05 do Automation Exercise. Usa dados dinâmicos gerados com Faker.
 - `cypress/e2e/1-getting-started/automation-exercise-modules.cy.js`: casos de testes do 01 ao 05, 08 ao 10, 15 e 16 do Automation Exercise, organizados com funções reutilizáveis.
->>>>>>> 7e30c3b (Remoção dos casos de testes 08, 09, 10, 15 e 16 do arquivo automation-exercise.cy.js e adicionados no arquivo automation-exercise-modules.cy.js)
 - `cypress/e2e/1-getting-started/automation-exercise-xpath.cy.js`: casos de testes do 01 ao 05 usando seletores XPath.
 - `cypress/e2e/1-getting-started/exercicio_02.cy.js`: testes de transações na aplicação DevFinance.
 - `cypress/support/automation-exercise.js`: funções reutilizáveis para cadastro, login, logout, exclusão de conta, catálogo, pesquisa, inscrição e checkout do Automation Exercise.
