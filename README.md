@@ -57,5 +57,12 @@ npx cypress run --spec "cypress/e2e/1-getting-started/automation-exercise-module
 - `cypress/e2e/1-getting-started/automation-exercise-modules.cy.js`: casos de testes do 01 ao 05, 08 ao 10, 15 e 16 do Automation Exercise, organizados com funções reutilizáveis.
 - `cypress/e2e/1-getting-started/automation-exercise-xpath.cy.js`: casos de testes do 01 ao 05 usando seletores XPath.
 - `cypress/e2e/1-getting-started/exercicio_02.cy.js`: testes de transações na aplicação DevFinance.
+- `cypress/modules/cadastro/index.js`: funções reutilizáveis para iniciar o cadastro, preencher os dados da conta e verificar o sucesso do cadastro ou a existência prévia do e-mail.
 - `cypress/support/automation-exercise.js`: funções reutilizáveis para cadastro, login, logout, exclusão de conta, catálogo, pesquisa, inscrição e checkout do Automation Exercise.
 - `cypress/support/e2e.js`: configuração de suporte e carregamento do `cypress-xpath`.
+
+## Documentação
+
+- [Diretrizes de arquitetura dos testes Cypress (versão vigente)](./diretrizes-arquitetura-projeto-v3.md)
+- [Diretrizes de arquitetura dos testes Cypress (versão anterior)](./diretrizes-arquitetura-projeto-v2.md)
+- [Diretrizes de arquitetura dos testes Cypress (versão inicial)](./diretrizes-arquitetura-projeto.md)
