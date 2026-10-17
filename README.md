@@ -19,8 +19,8 @@ O Faker gera dados aleatórios, como nomes e e-mails, para reduzir conflitos ent
 
 ## Pré-requisitos
 
-- [Node.js](https://nodejs.org/) e npm
-
+- [Node.js](https://nodejs.org/) e [npm](https://docs.npmjs.com/cli/v9/commands/npm-install
+  
 ## Instalação
 
 Na pasta do projeto, instale as dependências:
