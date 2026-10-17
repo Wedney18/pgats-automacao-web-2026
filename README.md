@@ -44,6 +44,8 @@ Executar os testes em modo headless:
 npx cypress run
 ```
 
+Essa execução gera o relatório HTML do Cypress Mochawesome em `cypress/reports/html/index.html`.
+
 Executar um spec específico:
 
 ```bash
