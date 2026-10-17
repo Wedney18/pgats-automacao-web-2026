@@ -4,7 +4,7 @@ Projeto de prática de automação de testes web com [Cypress](https://www.cypre
 
 ## Exercícios
 
-1. **Cenários de teste:** implementar os cinco primeiros cenários da página de casos de teste do site utilizado em aula.
+1. **Cenários de teste:** implementar casos de cadastro, autenticação, catálogo, pesquisa, inscrição e compra no Automation Exercise. O spec modularizado cobre os casos 01–05, 08–10, 15 e 16.
 2. **Correção de testes:** analisar e corrigir testes com problemas de sintaxe, funcionalidade e seletores. O exercício de referência está no [Gist](https://gist.github.com/samlucax/0df852881249b561cdf8888493b03125).
 3. **Seletores XPath:** instalar e experimentar `cypress-xpath`, adaptando seletores e observando legibilidade e velocidade de execução.
 
@@ -46,14 +46,19 @@ npx cypress run
 Executar um spec específico:
 
 ```bash
-npx cypress run --spec "cypress/e2e/1-getting-started/automation-exercise.cy.js"
+npx cypress run --spec "cypress/e2e/1-getting-started/automation-exercise-modules.cy.js"
 ```
 
 ## Estrutura
 
+<<<<<<< HEAD
 - `cypress/e2e/1-getting-started/automation-exercise.cy.js`: casos de testes do 01 ao 05, 08 ao 10, 15 e 16 do Automation Exercise, com cadastro, autenticação, catálogo, pesquisa, inscrição e compra. Usa dados dinâmicos gerados com Faker.
 - `cypress/e2e/1-getting-started/automation-exercise-modules.cy.js`: casos de testes do 01 ao 05, organizados com funções reutilizáveis.
+=======
+- `cypress/e2e/1-getting-started/automation-exercise.cy.js`: casos de testes do 01 ao 05 do Automation Exercise. Usa dados dinâmicos gerados com Faker.
+- `cypress/e2e/1-getting-started/automation-exercise-modules.cy.js`: casos de testes do 01 ao 05, 08 ao 10, 15 e 16 do Automation Exercise, organizados com funções reutilizáveis.
+>>>>>>> 7e30c3b (Remoção dos casos de testes 08, 09, 10, 15 e 16 do arquivo automation-exercise.cy.js e adicionados no arquivo automation-exercise-modules.cy.js)
 - `cypress/e2e/1-getting-started/automation-exercise-xpath.cy.js`: casos de testes do 01 ao 05 usando seletores XPath.
 - `cypress/e2e/1-getting-started/exercicio_02.cy.js`: testes de transações na aplicação DevFinance.
-- `cypress/support/automation-exercise.js`: funções reutilizáveis para os fluxos de cadastro, login, logout e exclusão de conta do Automation Exercise.
+- `cypress/support/automation-exercise.js`: funções reutilizáveis para cadastro, login, logout, exclusão de conta, catálogo, pesquisa, inscrição e checkout do Automation Exercise.
 - `cypress/support/e2e.js`: configuração de suporte e carregamento do `cypress-xpath`.
