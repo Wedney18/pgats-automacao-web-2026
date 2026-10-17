@@ -38,7 +38,7 @@ Abrir o Cypress em modo interativo:
 npx cypress open
 ```
 
-Executar os testes em modo headless:
+Executar todos os testes em modo headless:
 
 ```bash
 npx cypress run
@@ -46,7 +46,7 @@ npx cypress run
 
 Essa execução gera o relatório HTML do Cypress Mochawesome em `cypress/reports/html/index.html`.
 
-Executar um spec específico:
+Executar uma spec específico em modo headless:
 
 ```bash
 npx cypress run --spec "cypress/e2e/1-getting-started/automation-exercise-modules.cy.js"
