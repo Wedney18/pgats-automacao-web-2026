@@ -25,6 +25,7 @@ Para executar os testes em nuvem com BrowserStack, utilize o arquivo de configur
 
 ```bash
 npx browserstack-cypress run --config-file browserstack.json
+```
 
 ## Pré-requisitos
 
