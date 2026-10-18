@@ -20,14 +20,16 @@ jobs:
           cache: 'npm'
           cache-dependency-path: './pgats-automacao-web-2026/package-lock.json'
 
-      # 3. Instalação das dependências garantindo devDependencies
+      # 3. Instalação das dependências dentro da subpasta do projeto
       - name: Instalar dependências
+        working-directory: ./pgats-automacao-web-2026
         run: npm ci
         env:
           NODE_ENV: development
 
-      # 4. Execução dos testes
+      # 4. Execução dos testes dentro da subpasta
       - name: Executando os testes
+        working-directory: ./pgats-automacao-web-2026
         run: npx cypress run
 
       # 5. Upload dos artefatos (relatórios, prints e vídeos)
@@ -37,6 +39,6 @@ jobs:
         with:
           name: relatorios
           path: |
-            cypress/reports
-            cypress/screenshots
-            cypress/videos
+            pgats-automacao-web-2026/cypress/reports
+            pgats-automacao-web-2026/cypress/screenshots
+            pgats-automacao-web-2026/cypress/videos
