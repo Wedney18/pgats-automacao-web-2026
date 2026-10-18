@@ -8,27 +8,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
-      # 1. Clone do projeto para a máquina
+      # 1. Clone do projeto
       - name: Checkout do repositório
         uses: actions/checkout@v4
 
-      # 2. Configurar o ambiente Node.js (usando cache do npm para acelerar)
+      # 2. Configuração do Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
 
-      # 3. Instalar as dependências do projeto (MUITO IMPORTANTE!)
+      # 3. Instalação das dependências garantindo devDependencies
       - name: Instalar dependências
         run: npm ci
+        env:
+          NODE_ENV: development
 
-      # 4. Executar os testes
+      # 4. Execução dos testes
       - name: Executando os testes
         run: npx cypress run
 
-      # 5. Upload dos artefatos
-      - uses: actions/upload-artifact@v4
+      # 5. Upload dos artefatos (relatórios, prints e vídeos)
+      - name: Upload de artefatos
+        uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
           name: relatorios
