@@ -1,6 +1,12 @@
 node_modules/
+log
+results
 
 # Cypress generated artifacts
+cypress/reports
 cypress/screenshots/
-cypress/videos/
 cypress/downloads/
+
+npm_install_debug.log
+
+.DS_Store

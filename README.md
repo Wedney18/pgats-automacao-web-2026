@@ -7,6 +7,7 @@ Projeto de prática de automação de testes web com [Cypress](https://www.cypre
 1. **Cenários de teste:** implementar casos de cadastro, autenticação, catálogo, pesquisa, inscrição e compra no Automation Exercise. O spec modularizado cobre os casos de testes do 01 ao 05, 08 ao 10, 15 e 16.
 2. **Correção de testes:** analisar e corrigir testes com problemas de sintaxe, funcionalidade e seletores. O exercício de referência está no [Gist](https://gist.github.com/samlucax/0df852881249b561cdf8888493b03125).
 3. **Seletores XPath:** instalar e experimentar `cypress-xpath`, adaptando seletores e observando legibilidade e velocidade de execução.
+4. **Teste de janela e drag-and-drop:** validar cenários de múltiplas janelas e operações de arrastar e soltar no site The Internet.
 
 Os exercícios são voltados à prática e à fixação dos conceitos vistos em aula.
 
@@ -14,8 +15,16 @@ Os exercícios são voltados à prática e à fixação dos conceitos vistos em 
 
 - [Automation Exercise](https://www.automationexercise.com): cenários de cadastro, autenticação, catálogo, pesquisa, inscrição e compra.
 - [DevFinance](https://devfinance-agilizei.netlify.app): testes de cadastro de transações.
+- [The Internet (HerokuApp)](https://the-internet.herokuapp.com): testes de múltiplas janelas e drag-and-drop.
 
 O Faker gera dados aleatórios, como nomes e e-mails, para reduzir conflitos entre execuções dos testes.
+
+## Executar os testes no BrowserStack
+
+Para executar os testes em nuvem com BrowserStack, utilize o arquivo de configuração do projeto:
+
+```bash
+npx browserstack-cypress run --config-file browserstack.json
 
 ## Pré-requisitos
 
@@ -59,9 +68,11 @@ npx cypress run --spec "cypress/e2e/1-getting-started/automation-exercise-module
 - `cypress/e2e/1-getting-started/automation-exercise-modules.cy.js`: casos de testes do 01 ao 05, 08 ao 10, 15 e 16 do Automation Exercise, organizados com funções reutilizáveis.
 - `cypress/e2e/1-getting-started/automation-exercise-xpath.cy.js`: casos de testes do 01 ao 05 usando seletores XPath.
 - `cypress/e2e/1-getting-started/exercicio_02.cy.js`: testes de transações na aplicação DevFinance.
+- `cypress/modules/cadastro/index-class.js`: classe `Cadastro` com métodos para iniciar o cadastro, preencher formulário, confirmar criação da conta e validar mensagens de e-mail já cadastrado.
 - `cypress/modules/cadastro/index.js`: funções reutilizáveis para iniciar o cadastro, preencher os dados da conta e verificar o sucesso do cadastro ou a existência prévia do e-mail.
 - `cypress/support/automation-exercise.js`: funções reutilizáveis para cadastro, login, logout, exclusão de conta, catálogo, pesquisa, inscrição e checkout do Automation Exercise.
 - `cypress/support/e2e.js`: configuração de suporte e carregamento do `cypress-xpath`.
+- `cypress/e2e/1-getting-started/drag-and-drop-and-windows.cy.js`: cenário de testes de múltiplas janelas e drag-and-drop no The Internet.
 
 ## Documentação
 
