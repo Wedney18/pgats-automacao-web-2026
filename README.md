@@ -28,8 +28,6 @@ Depois, execute:
 ```bash
 npx browserstack-cypress run --config-file browserstack.json
 ```
-<<<<<<< HEAD
-=======
 
 Se a execução no BrowserStack for adicionada ao GitHub Actions, salve as credenciais em **Settings > Secrets and variables > Actions** e disponibilize-as ao job como variáveis de ambiente. Não use credenciais diretamente no workflow.
 
@@ -42,7 +40,6 @@ O workflow de testes E2E está em `.github/workflows/main.yml` e é iniciado man
 3. Clique em **Run workflow** e confirme a branch.
 
 Ao final da execução, o artefato `relatorios` contém os relatórios, screenshots e vídeos gerados, quando disponíveis. Baixe-o na página da execução do workflow.
->>>>>>> bc21017 (Atualizações)
 
 ## Pré-requisitos
 
