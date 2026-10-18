@@ -21,11 +21,28 @@ O Faker gera dados aleatórios, como nomes e e-mails, para reduzir conflitos ent
 
 ## Executar os testes no BrowserStack
 
-Para executar os testes em nuvem com BrowserStack, utilize o arquivo de configuração do projeto:
+Configure as variáveis de ambiente `BROWSERSTACK_USERNAME` e `BROWSERSTACK_ACCESS_KEY` com as credenciais da sua conta. Não grave essas credenciais no `browserstack.json` nem em outros arquivos versionados.
+
+Depois, execute:
 
 ```bash
 npx browserstack-cypress run --config-file browserstack.json
 ```
+<<<<<<< HEAD
+=======
+
+Se a execução no BrowserStack for adicionada ao GitHub Actions, salve as credenciais em **Settings > Secrets and variables > Actions** e disponibilize-as ao job como variáveis de ambiente. Não use credenciais diretamente no workflow.
+
+## GitHub Actions
+
+O workflow de testes E2E está em `.github/workflows/main.yml` e é iniciado manualmente:
+
+1. Abra a aba **Actions** do repositório.
+2. Selecione **Web E2E Tests**.
+3. Clique em **Run workflow** e confirme a branch.
+
+Ao final da execução, o artefato `relatorios` contém os relatórios, screenshots e vídeos gerados, quando disponíveis. Baixe-o na página da execução do workflow.
+>>>>>>> bc21017 (Atualizações)
 
 ## Pré-requisitos
 
