@@ -33,7 +33,7 @@ Se a execução no BrowserStack for adicionada ao GitHub Actions, salve as crede
 
 ## GitHub Actions
 
-O workflow de testes E2E está em `.github/workflows/main.yml` e é iniciado manualmente:
+O workflow de testes E2E está em `.github/workflows/pipeline.yml` e é iniciado manualmente:
 
 1. Abra a aba **Actions** do repositório.
 2. Selecione **Web E2E Tests**.
